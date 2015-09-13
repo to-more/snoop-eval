@@ -1,5 +1,7 @@
 package com.snoop.model.figuras;
 
+import com.snoop.model.figuras.childs.Hexagono;
+
 public abstract class Figura {
 
 	public abstract Double getArea();
@@ -15,4 +17,8 @@ public abstract class Figura {
 	protected Integer getNumLados() {
 		return numLados;
 	}
+	public boolean isHexagono() {
+		return this.getClass().equals(Hexagono.class);
+	}
+	
 }
