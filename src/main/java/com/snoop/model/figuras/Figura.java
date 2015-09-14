@@ -1,8 +1,8 @@
 package com.snoop.model.figuras;
 
-import com.snoop.model.figuras.childs.Hexagono;
+import com.snoop.model.workspace.PoligonoRegular;
 
-public abstract class Figura {
+public abstract class Figura implements PoligonoRegular{
 
 	public abstract Double getArea();
 	public abstract Double getPerimetro();
@@ -17,8 +17,12 @@ public abstract class Figura {
 	protected Integer getNumLados() {
 		return numLados;
 	}
-	public boolean isHexagono() {
-		return this.getClass().equals(Hexagono.class);
+	
+	public Double getApotema(){
+		return 0.0;
 	}
 	
+	public Boolean isRegular(){
+		return true;
+	}
 }

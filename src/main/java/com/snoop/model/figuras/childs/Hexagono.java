@@ -1,8 +1,9 @@
 package com.snoop.model.figuras.childs;
 
 import com.snoop.model.figuras.Figura;
+import com.snoop.model.workspace.PoligonoRegular;
 
-public class Hexagono extends Figura {
+public class Hexagono extends Figura implements PoligonoRegular{
 
 	private Double radio;
 

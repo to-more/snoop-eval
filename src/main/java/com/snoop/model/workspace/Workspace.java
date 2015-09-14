@@ -51,4 +51,17 @@ public class Workspace {
 	public boolean contains(Figura figura) {
 		return figuras.contains(figura);
 	}
+	
+	public Double getApotemaTotal(){
+
+		Double apotemaTotal = 0.0;
+		
+		for(Figura figura : this.figuras){
+			if(figura.isRegular()){
+				apotemaTotal += figura.getApotema();
+			}
+		}
+		return apotemaTotal;
+	}
+	
 }

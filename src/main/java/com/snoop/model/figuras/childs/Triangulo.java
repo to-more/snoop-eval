@@ -11,7 +11,6 @@ public class Triangulo extends Figura{
 	public Triangulo() {
 		super(3);
 	}
-
 	
 	public Triangulo(double base, double altura, double hipotenusa) throws Exception {
 		super(3);
@@ -42,6 +41,14 @@ public class Triangulo extends Figura{
 	@Override
 	public Double getPerimetro() {
 		return altura + base + hipotenusa;
+	}
+
+	public Boolean isRegular(){
+		return false;
+	}
+	
+	public Double getApotema() throws UnsupportedOperationException{
+		throw new UnsupportedOperationException("El triangulo no soporta apotemas");
 	}
 
 }

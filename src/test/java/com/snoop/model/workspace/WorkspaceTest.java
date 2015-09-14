@@ -56,6 +56,17 @@ public class WorkspaceTest {
 		assertEquals(areaTotalExpected, workspace.getAreaTotal());
 	}
 	
+	@Test
+	public void getApotemaTotal(){
+		double radio = 4.0;
+		int alCuadrado = 2;
+		Hexagono hexagono = new Hexagono(4.0);
+		workspace = new Workspace(2);
+		workspace.agregar(hexagono);
+		workspace.agregar(cuadrado);
+		Double apotemaTotalExpected = Math.sqrt(Math.pow(radio, alCuadrado) + Math.pow(radio * 0.5, alCuadrado));
+		assertEquals(apotemaTotalExpected, workspace.getApotemaTotal());
+	}	
 	
 	@Test
 	public void cambiarFigura(){
