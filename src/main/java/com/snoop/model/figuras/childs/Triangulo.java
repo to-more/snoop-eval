@@ -4,6 +4,8 @@ import com.snoop.model.figuras.Figura;
 
 public class Triangulo extends Figura{
 
+
+	private static final long serialVersionUID = -4023393828364800602L;
 	private Double base;
 	private Double altura;
 	private Double hipotenusa;

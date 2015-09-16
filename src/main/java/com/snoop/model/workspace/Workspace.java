@@ -1,15 +1,32 @@
 package com.snoop.model.workspace;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.snoop.model.figuras.Figura;
 
-public class Workspace {
+public class Workspace implements Serializable{
 
+
+
+	private static final long serialVersionUID = 5936954186023588461L;
 	private List<Figura> figuras;
 	private Integer limiteFiguras;
 	
+	private Long id;
+	
+	
+	
+	public Workspace(Long id) {
+		super();
+		this.id = id;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
 	public Workspace(Integer limiteFiguras) {
 		this.figuras = new ArrayList<>(limiteFiguras);
 		this.limiteFiguras = limiteFiguras;
@@ -63,5 +80,18 @@ public class Workspace {
 		}
 		return apotemaTotal;
 	}
-	
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Workspace [figuras=");
+		builder.append(figuras);
+		builder.append(", limiteFiguras=");
+		builder.append(limiteFiguras);
+		builder.append(", id=");
+		builder.append(id);
+		builder.append("]");
+		return builder.toString();
+	}
+
 }

@@ -4,6 +4,8 @@ import com.snoop.model.figuras.Figura;
 
 public class Cuadrado extends Figura {
 
+
+	private static final long serialVersionUID = -1025986749136369676L;
 	private Double lado;
 	
 	

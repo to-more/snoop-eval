@@ -5,6 +5,8 @@ import com.snoop.model.workspace.PoligonoRegular;
 
 public class Hexagono extends Figura implements PoligonoRegular{
 
+
+	private static final long serialVersionUID = -1759286924141324229L;
 	private Double radio;
 
 	public Hexagono(Double radio) {

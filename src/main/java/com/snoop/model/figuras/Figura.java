@@ -1,8 +1,13 @@
 package com.snoop.model.figuras;
 
+import java.io.Serializable;
+
 import com.snoop.model.workspace.PoligonoRegular;
 
-public abstract class Figura implements PoligonoRegular{
+public abstract class Figura implements Serializable, PoligonoRegular{
+
+	private static final long serialVersionUID = 5972974619580580938L;
+
 
 	public abstract Double getArea();
 	public abstract Double getPerimetro();
