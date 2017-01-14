@@ -24,7 +24,7 @@ public abstract class Figura implements Serializable, PoligonoRegular{
 	}
 	
 	public Double getApotema(){
-		return 0.0;
+		return new Double(0.0);
 	}
 	
 	public Boolean isRegular(){
