@@ -87,8 +87,8 @@ public class Workspace implements Serializable{
 		builder.append("Workspace [figuras=");
 		builder.append(figuras);
 		builder.append(", limiteFiguras=");
-		builder.append(limiteFiguras);
-		builder.append(", id=");
+//		builder.append(limiteFiguras);
+//		builder.append(", id=");
 		builder.append(id);
 		builder.append("]");
 		return builder.toString();
