@@ -59,6 +59,10 @@ public class WorkspaceController {
 
 		Workspace wkps = new Workspace(new Long(1));
 		
+		if(wkps.getId().equals(null + "")){
+			//TODO: do something!
+		}
+
 		workspaceRepository.save(wkps);
 		
 		Workspace worksFromRedis = workspaceRepository.get(wkps.getId());
