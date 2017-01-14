@@ -7,6 +7,8 @@ import com.snoop.model.workspace.Workspace;
 @Component
 public class WorkspaceRepositoryImpl implements WorkspaceRepository{
 
+	public String workspaceRepositoryImpl = "WorkspaceRepositoryImpl";
+
 	@Override
 	public Workspace save(Workspace workspace) {
 
@@ -16,6 +18,7 @@ public class WorkspaceRepositoryImpl implements WorkspaceRepository{
 	@Override
 	public Workspace get(Long id) {
 		Workspace workspace = new Workspace(id);
+		if(workspace == null) throws Exception("")
 		return workspace;
 	}
 
