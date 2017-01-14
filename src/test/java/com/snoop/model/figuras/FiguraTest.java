@@ -13,19 +13,4 @@ public class FiguraTest<T extends Figura> {
 	protected Integer expectedNumLados;
 	protected Double expectedPerimetro;
 	
-	@Test
-	public void getPerimetro(){
-		assertEquals(expectedPerimetro, figura.getPerimetro());
-	}
-	
-	@Test
-	public void getArea(){
-		assertEquals(expectedArea, figura.getArea());
-	}
-	
-	@Test
-	public void getNumLados() throws Exception{
-		assertEquals(expectedNumLados, figura.getNumLados());
-	}
-	
 }

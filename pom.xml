@@ -14,6 +14,12 @@
 		<junit.version>4.11</junit.version>
 		<logback.version>1.0.13</logback.version>
 		<jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+		<sonar.analysis.mode>preview</sonar.analysis.mode>
+		<sonar.github.pullRequest>6</sonar.github.pullRequest>
+		<sonar.github.repository>to-more/snoop-eval</sonar.github.repository>
+		<sonar.github.oauth>a39a016e552f797121b1bc44deb58e97ef28b5b9</sonar.github.oauth>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.login>e7c2ccd44041ff91952451e9bbb453efdc4d781b</sonar.login>
 	</properties>
 
 	<dependencyManagement>
