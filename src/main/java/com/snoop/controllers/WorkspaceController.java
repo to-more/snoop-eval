@@ -57,7 +57,7 @@ public class WorkspaceController {
 
 		logger.debug("index() is executed!");
 
-		Workspace wkps = new Workspace(new Long(1));
+		Workspace wkps = new Workspace(Long.valueOf(1));
 		
 		workspaceRepository.save(wkps);
 		
