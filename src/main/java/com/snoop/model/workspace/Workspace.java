@@ -16,7 +16,7 @@ public class Workspace implements Serializable{
 	
 	private Long id;
 	
-	
+	private	String workspace;
 	
 	public Workspace(Long id) {
 		super();
