@@ -15,10 +15,19 @@ public class WorkspaceRepositoryImpl implements WorkspaceRepository{
 		return workspace;
 	}
 
+	public Workspace getLong(Long id) throws Exception {
+		Workspace workspace = new Workspace(id);
+		if(workspace.getId().equals(null + "")) 
+			throw new Exception("");
+		return workspace;
+	}
+
 	@Override
 	public Workspace get(Long id) {
 		Workspace workspace = new Workspace(id);
-		if(workspace == null) throws Exception("")
+		if(workspace.getId().equals(null + "")) {
+			//TODO
+		}
 		return workspace;
 	}
 

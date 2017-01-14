@@ -17,7 +17,7 @@
 		<sonar.analysis.mode>preview</sonar.analysis.mode>
 		<sonar.github.pullRequest>1</sonar.github.pullRequest>
 		<sonar.github.repository>to-more/snoop-eval</sonar.github.repository>
-		<sonar.github.oauth>a01d4b4f395f5e8df4dfa8274005e993c32f6aa8</sonar.github.oauth>
+		<sonar.github.oauth>a35d68cd0e13ec9f45934aba2cfa9d4686374f2d</sonar.github.oauth>
 		<sonar.host.url>http://localhost:9000/</sonar.host.url>
 		<sonar.login>e7c2ccd44041ff91952451e9bbb453efdc4d781b</sonar.login>
 	</properties>
